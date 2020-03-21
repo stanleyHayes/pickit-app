@@ -1,9 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navigation/NavigationBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/CreateTodoForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/OrderItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ProductItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ShopItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ShoppingListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/TodoList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/TodoListItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/authentication/VerifyAccountPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/ShoppingCartPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/home/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/orders/OrderPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/orders/OrdersPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/ProductPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/ProductsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shopping-list/ShoppingListPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shops/ShopsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="covid-19-save-the-earth" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZR36I2StNflpxZkeL7pN2kuEwr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/authentication" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/authentication" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="" />
+      <created>1584787902394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584787902394</updated>
+      <workItem from="1584787904145" duration="9616000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1824" height="274" key="GridCell.Tab.0.bottom" timestamp="1584792409515">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1824" height="274" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409515" />
+    <state width="1824" height="274" key="GridCell.Tab.0.center" timestamp="1584792409514">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1824" height="274" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409514" />
+    <state width="1824" height="274" key="GridCell.Tab.0.left" timestamp="1584792409513">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1824" height="274" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409513" />
+    <state width="1824" height="274" key="GridCell.Tab.0.right" timestamp="1584792409514">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1824" height="274" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409514" />
   </component>
 </project>
