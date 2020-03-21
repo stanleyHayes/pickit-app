@@ -1,6 +1,7 @@
 import React from "react";
-import {Card, CardHeader, CardMedia, CardContent, Typography, CardActions, Button} from "@material-ui/core";
+import {Card, CardHeader, CardMedia, CardContent, Typography, CardActions, Button, Avatar} from "@material-ui/core";
 import {ShoppingBasket, Info} from "@material-ui/icons";
+import {makeStyles} from "@material-ui/styles";
 
 function ProductItem(props) {
 
@@ -13,30 +14,39 @@ function ProductItem(props) {
     //price
     //status
 
+    const useStyles = makeStyles({
+        image: {
+            height: 150,
+            objectFit: true
+        }
+    });
+
+    const classes = useStyles();
     return (
         <Card raised={true} elevation={2} variant="elevation">
             <CardHeader
-                avatar={props.product.image}
+                avatar={<Avatar src={props.product.image}/>}
                 title={props.product.name}
                 subheader={props.product.category}
             />
-            <CardMedia image={props.shop.image}/>
+            <CardMedia
+                className={classes.image}
+                component="img"
+                image={props.product.image}
+            />
             <CardContent>
                 <Typography
-                    variant="overline"
-                    gutterBottom={true}>
+                    variant="overline">
                     {props.product.status}
                 </Typography>
 
                 <Typography
-                    variant="h3"
-                    gutterBottom={true}>
-                    {props.product.price.amount}
+                    variant="h3">
+                    $ {props.product.price}
                 </Typography>
 
                 <Typography
-                    variant="body1"
-                    gutterBottom={true}>
+                    variant="body1">
                     {props.product.description}
                 </Typography>
             </CardContent>

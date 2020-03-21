@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import {Container, Grid, Typography} from "@material-ui/core";
 import ShopItem from "../../components/shared/ShopItem";
 import {makeStyles} from "@material-ui/styles";
+import ShoppingListItem from "../../components/shared/ShoppingListItem";
 
 function ShoppingListPage(props) {
 
@@ -11,11 +12,11 @@ function ShoppingListPage(props) {
             flex: 1,
             backgroundColor: "whitesmoke",
             display: "flex",
-            minHeight: "95vh"
+            minHeight: "95vh",
+            paddingTop: 30
         },
         container: {
             flex: 1,
-            minHeight: "100%"
         },
         noShopsContainer: {
             flex: 1,
@@ -23,7 +24,15 @@ function ShoppingListPage(props) {
         }
     });
 
-    const [shoppingList, setShoppingList] = useState([]);
+    const listItem = {
+        name: "Apple",
+        quantity: 50,
+        description: "Freshly harvested red apples",
+        status: "delivered",
+        date: "2020-08-1"
+    };
+
+    const [shoppingList, setShoppingList] = useState([listItem, listItem, listItem, listItem, listItem, listItem, listItem]);
     const classes = useStyles();
 
     return (
@@ -32,7 +41,7 @@ function ShoppingListPage(props) {
                 <Container>
                     <Grid
                         className={classes.container}
-                        direction="column"
+                        direction="row"
                         spacing={2}
                         container={true}
                         justify={(shoppingList.length === 0) ? "center" : "flex-start"}
@@ -45,10 +54,10 @@ function ShoppingListPage(props) {
                             </Grid>
 
                         ) : (
-                            (shoppingList.map(function (list, index) {
+                            (shoppingList.map(function (listItem, index) {
                                 return (
-                                    <Grid key={index} item={true} xs={12} sm={12} md={6}>
-                                        <ShopItem list={list}/>
+                                    <Grid key={index} item={true} xs={12} sm={12} md={3}>
+                                        <ShoppingListItem listItem={listItem}/>
                                     </Grid>
                                 )
                             }))

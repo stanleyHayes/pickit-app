@@ -11,7 +11,8 @@ function ShopsPage(props) {
             flex: 1,
             backgroundColor: "whitesmoke",
             display: "flex",
-            minHeight: "95vh"
+            minHeight: "95vh",
+            paddingTop: 30
         },
         container: {
             flex: 1,
@@ -23,7 +24,23 @@ function ShopsPage(props) {
         }
     });
 
-    const [shops, setShops] = useState([]);
+
+    const shop = {
+        owner: {
+            name: "Stanley Hayford",
+            image: "https://5.imimg.com/data5/CE/GT/MY-35754189/fresh-apple-500x500.jpg"
+        },
+        phone: "+233270048319",
+        image: "https://5.imimg.com/data5/CE/GT/MY-35754189/fresh-apple-500x500.jpg",
+        description: "We serve all kinds of foods",
+        category: "Restaurant",
+        name: "Chop & Hop",
+        email: "hayfordstanley@gmail.com",
+        location: "Helsinki"
+    };
+
+
+    const [shops, setShops] = useState([shop, shop, shop, shop, shop, shop]);
     const classes = useStyles();
 
     return (
@@ -32,11 +49,11 @@ function ShopsPage(props) {
                 <Container>
                     <Grid
                         className={classes.container}
-                        direction="column"
+                        direction="row"
                         spacing={2}
                         container={true}
-                        justify={(shops.length === 0) ? "center": "flex-start"}
-                        alignItems={(shops.length === 0) ? "center": "flex-start"}>
+                        justify={(shops.length === 0) ? "center" : "flex-start"}
+                        alignItems={(shops.length === 0) ? "center" : "flex-start"}>
 
                         {(shops.length === 0) ? (
                             <Grid className={classes.noShopsContainer} direction="column" alignItems="center"
@@ -47,7 +64,7 @@ function ShopsPage(props) {
                         ) : (
                             (shops.map(function (shop, index) {
                                 return (
-                                    <Grid key={index} item={true} xs={12} sm={12} md={6}>
+                                    <Grid key={index} item={true} xs={12} sm={12} md={4}>
                                         <ShopItem shop={shop}/>
                                     </Grid>
                                 )

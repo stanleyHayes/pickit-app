@@ -12,7 +12,7 @@ import {
     LockOpen
 } from "@material-ui/icons";
 import {makeStyles} from "@material-ui/core/styles";
-import {useHistory} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
     avatar: {
@@ -48,6 +48,9 @@ const useStyles = makeStyles({
     },
     editProfileIcon: {
         color: "grey"
+    },
+    link: {
+        textDecoration: "none"
     }
 
 });
@@ -57,54 +60,12 @@ function DrawerContent() {
 
     const classes = useStyles();
 
-    const history = useHistory();
+    function handleDeleteAccountClicked(event) {
 
-    const [selectedIndex, setSelectedIndex] = useState(1);
+    }
 
 
-    function handleListClick(event, key) {
-        setSelectedIndex(key);
-
-        switch (selectedIndex) {
-            case 0:
-                history.push("/profile");
-                break;
-            case 1:
-                history.push("/");
-                break;
-            case 2:
-                history.push("/list");
-                break;
-            case 3:
-                history.push("/shops");
-                break;
-            case 4:
-                history.push("/products");
-                break;
-            case 5:
-                history.push("/orders");
-                break;
-            case 6:
-                history.push("/cart");
-                break;
-            case 7:
-                history.push("/account");
-                break;
-            case 8:
-                history.push("/login");
-                break;
-            case 9:
-                history.push("/edit-profile");
-                break;
-            case 10:
-                history.push("/change-password");
-                break;
-            case 11:
-                console.log("Delete Account Clicked");
-                break;
-            default:
-                console.log("Nothing Selected")
-        }
+    function handleLogoutClicked(event) {
 
     }
 
@@ -124,80 +85,93 @@ function DrawerContent() {
 
                 <Grid item={true}>
                     <List>
-                        <ListItem selected={selectedIndex === 0} onClick={(event) => handleListClick(event, 0)}
-                                  divider={true} button={true}
-                                  id="profile">
+                        <ListItem divider={true} button={true} id="profile">
                             <ListItemAvatar>
                                 <Face className={classes.profileIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Stanley" secondary="Visit Profile"/>
+                            <Link className={classes.link} to="/profile">
+                                <ListItemText primary="Stanley" secondary="Profile"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 1} onClick={(event) => handleListClick(event, 1)}
-                                  divider={true} button={true} id="home">
+                        <ListItem divider={true} button={true} id="home">
                             <ListItemAvatar>
                                 <FormatListNumbered className={classes.agendaIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Home"/>
+                            <Link className={classes.link} to="/">
+                                <ListItemText primary="Home"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 2} onClick={(event) => handleListClick(event, 2)}
-                                  divider={true} button={true} id="list">
+                        <ListItem
+                            divider={true} button={true} id="list">
                             <ListItemAvatar>
                                 <CheckCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Shopping list"/>
+                            <Link className={classes.link} to="/list">
+                                <ListItemText primary="Shopping list"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 3} onClick={(event) => handleListClick(event, 3)}
-                                  divider={true} button={true}
-                                  id="shops">
+                        <ListItem
+                            divider={true} button={true}
+                            id="shops">
                             <ListItemAvatar>
                                 <CheckOutlined className={classes.uncompletedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Shops"/>
+                            <Link className={classes.link} to="/shops">
+                                <ListItemText primary="Shops"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 4} onClick={(event) => handleListClick(event, 4)}
-                                  divider={true} button={true}
-                                  id="products">
+                        <ListItem
+                            divider={true} button={true}
+                            id="products">
                             <ListItemAvatar>
                                 <Timeline className={classes.timelineIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Products"/>
+                            <Link className={classes.link} to="/products">
+                                <ListItemText primary="Products"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 5} onClick={(event) => handleListClick(event, 5)}
-                                  divider={true} button={true}
-                                  id="orders">
+                        <ListItem
+                            divider={true} button={true}
+                            id="orders">
                             <ListItemAvatar>
                                 <CheckOutlined className={classes.uncompletedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Orders"/>
+                            <Link className={classes.link} to="/orders">
+                                <ListItemText primary="Orders"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 6} onClick={(event) => handleListClick(event, 6)}
-                                  divider={true} button={true} id="cart">
+                        <ListItem
+                            divider={true} button={true} id="cart">
                             <ListItemAvatar>
                                 <CheckCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Cart"/>
+                            <Link className={classes.link} to="/cart">
+                                <ListItemText primary="Cart"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 7} onClick={(event) => handleListClick(event, 7)}
-                                  divider={true} button={true}
-                                  id="account">
+                        <ListItem
+                            divider={true} button={true}
+                            id="account">
                             <ListItemAvatar>
                                 <CheckCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Account"/>
+                            <Link className={classes.link} to="/account">
+                                <ListItemText primary="Account"/>
+                            </Link>
                         </ListItem>
                     </List>
                 </Grid>
 
                 <Grid>
                     <List dense={false} draggable={true}>
-                        <ListItem selected={selectedIndex === 8} onClick={(event) => handleListClick(event, 8)}
+                        <ListItem onClick={handleLogoutClicked}
                                   divider={true} button={true}
                                   id="logout">
                             <ListItemAvatar>
@@ -206,25 +180,29 @@ function DrawerContent() {
                             <ListItemText primary="Logout"/>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 9} onClick={(event) => handleListClick(event, 9)}
-                                  divider={true} button={true}
-                                  id="editprofile">
+                        <ListItem
+                            divider={true} button={true}
+                            id="editprofile">
                             <ListItemAvatar>
                                 <Edit className={classes.editIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Edit Profile"/>
+                            <Link className={classes.link} to="/edit-profile">
+                                <ListItemText primary="Edit Profile"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 10} onClick={(event) => handleListClick(event, 10)}
-                                  divider={true} button={true}
-                                  id="changepassword">
+                        <ListItem
+                            divider={true} button={true}
+                            id="changepassword">
                             <ListItemAvatar>
                                 <LockOpen className={classes.changePasswordIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Change Password"/>
+                            <Link className={classes.link} to="/change-password">
+                                <ListItemText primary="Change Password"/>
+                            </Link>
                         </ListItem>
 
-                        <ListItem selected={selectedIndex === 11} onClick={(event) => handleListClick(event, 11)}
+                        <ListItem onClick={handleDeleteAccountClicked}
                                   button={true} id="deleteaccount">
                             <ListItemAvatar>
                                 <DeleteForever className={classes.deleteIcon}/>

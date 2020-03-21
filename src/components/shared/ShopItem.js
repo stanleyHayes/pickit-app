@@ -1,6 +1,7 @@
 import React from "react";
-import {Card, CardHeader, CardMedia, CardContent, Typography, CardActions, Button} from "@material-ui/core";
-import {Phone, Email} from "@material-ui/icons";
+import {Card, CardHeader, CardMedia, CardContent, Typography, Button, Avatar, CardActions} from "@material-ui/core";
+import {Phone, Email, Info} from "@material-ui/icons";
+import {makeStyles} from "@material-ui/styles";
 
 function ShopItem(props) {
 
@@ -11,30 +12,40 @@ function ShopItem(props) {
     //description
     //category
 
+    const useStyles = makeStyles({
+        image: {
+            height: 200,
+            objectFit: true
+        },
+        button: {
+            textAlign: "left"
+        }
+    });
+
+    const classes = useStyles();
+
     return (
         <Card raised={true} elevation={2} variant="elevation">
             <CardHeader
-                avatar={props.shop.owner.image}
+                avatar={<Avatar src={props.shop.owner.image}/>}
                 title={props.shop.owner.name}
-                subheader={props.shop.location}
+                subheader={props.shop.location} action={<Info/>}
             />
-            <CardMedia image={props.shop.image}/>
+            <CardMedia className={classes.image} component="img" image={props.shop.image}/>
             <CardContent>
                 <Typography
                     variant="body1"
                     gutterBottom={true}>
                     {props.shop.description}
                 </Typography>
-            </CardContent>
-            <CardActions>
-                <Button>
-                    <Phone/>
-                </Button>
 
-                <Button>
-                    <Email/>
+                <Button className={classes.button} size="small" startIcon={<Phone/>}
+                        fullWidth={false}>{props.shop.phone}</Button>
+
+                <Button size="small" className={classes.button} startIcon={<Email/>} fullWidth={false}>
+                    {props.shop.email}
                 </Button>
-            </CardActions>
+            </CardContent>
         </Card>
     )
 }

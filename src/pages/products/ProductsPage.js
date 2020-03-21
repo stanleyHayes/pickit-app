@@ -10,7 +10,8 @@ function ProductsPage(props) {
             flex: 1,
             backgroundColor: "whitesmoke",
             display: "flex",
-            minHeight: "95vh"
+            minHeight: "83vh",
+            paddingTop: 30
         },
         container: {
             flex: 1,
@@ -22,7 +23,17 @@ function ProductsPage(props) {
         }
     });
 
-    const [products, setProducts] = useState([]);
+    let product =
+        {
+            name: 'Apple',
+            price: 20,
+            image: "https://5.imimg.com/data5/CE/GT/MY-35754189/fresh-apple-500x500.jpg",
+            description: "Red Apple",
+            category: "Fruit",
+            status: "available"
+        };
+
+    const [products, setProducts] = useState([product, product, product, product, product, product]);
     const classes = useStyles();
 
     return (
@@ -31,8 +42,8 @@ function ProductsPage(props) {
                 <Container>
                     <Grid
                         className={classes.container}
-                        direction="column"
-                        spacing={2}
+                        direction="row"
+                        spacing={3}
                         container={true}
                         justify={(products.length === 0) ? "center" : "flex-start"}
                         alignItems={(products.length === 0) ? "center" : "flex-start"}>
@@ -46,7 +57,7 @@ function ProductsPage(props) {
                         ) : (
                             (products.map(function (product, index) {
                                 return (
-                                    <Grid key={index} item={true} xs={12} sm={12} md={6}>
+                                    <Grid key={index} item={true} xs={12} sm={12} md={3}>
                                         <ProductItem product={product}/>
                                     </Grid>
                                 )

@@ -6,7 +6,8 @@ import {
     Button,
     CardContent,
     Card,
-    Typography
+    Typography,
+    Divider
 } from "@material-ui/core";
 
 import {Edit, Delete, DoneAll, Done, CheckCircle} from "@material-ui/icons";
@@ -16,11 +17,17 @@ import {makeStyles} from "@material-ui/styles";
 
 function ShoppingListItem({listItem, dispatch, handleListItemRemove}) {
 
-    const {name,  quantity, status, description} = listItem;
+    const {name,  quantity, status, description, date} = listItem;
 
     const useStyles = makeStyles({
-        deleteIcon: {
+        delete: {
             color: "red"
+        },
+        doneAll: {
+            color: "green"
+        },
+        done: {
+            color: "orange"
         }
     });
 
@@ -34,22 +41,24 @@ function ShoppingListItem({listItem, dispatch, handleListItemRemove}) {
         <Card elevation={2} raised={true} variant="elevation">
             <CardHeader
                 title={name}
-                subheader={`${quantity} ${quantity === 1 ? "piece" : "pieces"}`}
+                subheader={new Date(date).toDateString()}
             />
             <CardContent>
-                <Typography variant="body2">{description}</Typography>
+                <Typography variant="body1">{`${quantity} ${quantity === 1 ? "piece" : "pieces"}`}</Typography>
+                <Typography variant="body1">{description}</Typography>
+                <Divider variant="fullWidth" />
             </CardContent>
             <CardActions>
                 <Button>
                     <Edit/>
                 </Button>
                 <Button onClick={handleDeleteClicked}>
-                    <Delete className={classes.red}/>
+                    <Delete className={classes.delete}/>
                 </Button>
                 <Button>
-                    {(status === "bought") ? (<DoneAll/>)
+                    {(status === "bought") ? (<DoneAll className={classes.doneAll}/>)
                         :
-                        (status === "delivered" ? (<CheckCircle/>) : (<Done/>))}
+                        (status === "delivered" ? (<CheckCircle className={classes.doneAll}/>) : (<Done className={classes.done}/>))}
                 </Button>
             </CardActions>
         </Card>
