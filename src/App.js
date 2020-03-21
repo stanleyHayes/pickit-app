@@ -14,6 +14,9 @@ import SignInPage from "./pages/authentication/SignInPage";
 import OrdersPage from "./pages/orders/OrdersPage";
 import ShoppingCartPage from "./pages/cart/ShoppingCartPage";
 import ShoppingListPage from "./pages/shopping-list/ShoppingListPage";
+import CreateShopPage from "./pages/shops/CreateShopPage";
+import CreateProductPage from "./pages/products/CreateProductPage";
+import CreateShoppingListPage from "./pages/shopping-list/CreateShoppingListPage";
 
 function App() {
     return (
@@ -35,15 +38,15 @@ function App() {
                     <ProductsPage/>
                 </Route>
 
-              <Route path="/list">
-                <ShoppingListPage/>
-              </Route>
+                <Route path="/list">
+                    <ShoppingListPage/>
+                </Route>
 
-              <Route path="/cart">
+                <Route path="/cart">
                     <ShoppingCartPage/>
                 </Route>
 
-                <Route path="/orders/:orderId" >
+                <Route path="/orders/:orderId">
                     <OrdersPage/>
                 </Route>
 
@@ -73,6 +76,18 @@ function App() {
 
                 <Route path="/verify/:token">
                     <VerifyAccountPage/>
+                </Route>
+
+                <Route path="/new/list" exact={true}>
+                    <CreateShoppingListPage/>
+                </Route>
+
+                <Route path="/new/product" exact={true}>
+                    <CreateProductPage/>
+                </Route>
+
+                <Route path="/new/shop" exact={true}>
+                    <CreateShopPage/>
                 </Route>
             </Switch>
         </BrowserRouter>

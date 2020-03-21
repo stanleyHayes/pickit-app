@@ -44,10 +44,10 @@ function ProductsPage(props) {
                             </Grid>
 
                         ) : (
-                            (products.map(function (list, index) {
+                            (products.map(function (product, index) {
                                 return (
                                     <Grid key={index} item={true} xs={12} sm={12} md={6}>
-                                        <ProductItem list={list}/>
+                                        <ProductItem product={product}/>
                                     </Grid>
                                 )
                             }))

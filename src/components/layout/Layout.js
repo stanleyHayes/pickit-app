@@ -26,8 +26,16 @@ function Layout(props) {
         setSpeedDialOpen(!speedDialOpen);
     }
 
-    function handleAddAgendaClicked() {
-        history.push("/create");
+    function handleAddShopClicked() {
+        history.push("/new/shop");
+    }
+
+    function handleAddProductClicked() {
+        history.push("/new/product");
+    }
+
+    function handleAddListClicked() {
+        history.push("/new/list");
     }
 
     function handleSpeedDialClose() {
@@ -53,12 +61,31 @@ function Layout(props) {
 
                     <SpeedDialAction
                         open={speedDialOpen}
-                        onClick={handleAddAgendaClicked}
-                        title="Add Agenda"
+                        onClick={handleAddListClicked}
+                        title="Add List"
                         tooltipOpen={true}
-                        tooltipTitle={<Typography variant="overline">Agenda</Typography>}
+                        tooltipTitle={<Typography variant="overline">List</Typography>}
                         tooltipPlacement="left"
                         icon={<PostAdd/>}/>
+
+                    <SpeedDialAction
+                        open={speedDialOpen}
+                        onClick={handleAddShopClicked}
+                        title="Add Agenda"
+                        tooltipOpen={true}
+                        tooltipTitle={<Typography variant="overline">Shop</Typography>}
+                        tooltipPlacement="left"
+                        icon={<PostAdd/>}/>
+
+                    <SpeedDialAction
+                        open={speedDialOpen}
+                        onClick={handleAddProductClicked}
+                        title="Add Agenda"
+                        tooltipOpen={true}
+                        tooltipTitle={<Typography variant="overline">Product</Typography>}
+                        tooltipPlacement="left"
+                        icon={<PostAdd/>}/>
+
                 </SpeedDial>
             </div>
         </div>

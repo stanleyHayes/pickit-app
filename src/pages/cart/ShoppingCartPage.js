@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import {makeStyles} from "@material-ui/styles";
 import {Container, Grid, Typography} from "@material-ui/core";
 import ProductItem from "../../components/shared/ProductItem";
+import ProductOrderItem from "../../components/shared/ProductOrderItem";
 
 function ShoppingCartPage(props) {
     const useStyles = makeStyles({
@@ -22,7 +23,7 @@ function ShoppingCartPage(props) {
         }
     });
 
-    const [products, setProducts] = useState([]);
+    const [cart, setCart] = useState([]);
     const classes = useStyles();
 
     return (
@@ -34,20 +35,20 @@ function ShoppingCartPage(props) {
                         direction="column"
                         spacing={2}
                         container={true}
-                        justify={(products.length === 0) ? "center" : "flex-start"}
-                        alignItems={(products.length === 0) ? "center" : "flex-start"}>
+                        justify={(cart.length === 0) ? "center" : "flex-start"}
+                        alignItems={(cart.length === 0) ? "center" : "flex-start"}>
 
-                        {(products.length === 0) ? (
+                        {(cart.length === 0) ? (
                             <Grid className={classes.noShopsContainer} direction="column" alignItems="center"
                                   justify="center" container={true} item={true}>
-                                <Typography align="center" variant="h6">No Products available</Typography>
+                                <Typography align="center" variant="h6">No items in cart</Typography>
                             </Grid>
 
                         ) : (
-                            (products.map(function (list, index) {
+                            (cart.map(function (listItem, index) {
                                 return (
                                     <Grid key={index} item={true} xs={12} sm={12} md={6}>
-                                        <ProductItem list={list}/>
+                                        <ProductOrderItem listItem={listItem}/>
                                     </Grid>
                                 )
                             }))

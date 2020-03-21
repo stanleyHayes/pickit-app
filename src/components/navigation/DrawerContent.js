@@ -83,42 +83,49 @@ function DrawerContent() {
                             <ListItemAvatar>
                                 <FormatListNumbered className={classes.agendaIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Today's Agenda" secondary="View all agenda"/>
+                            <ListItemText primary="Home"/>
                         </ListItem>
 
                         <ListItem divider={true}>
                             <ListItemAvatar>
                                 <CheckCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Completed" secondary="View completed agenda"/>
+                            <ListItemText primary="Shopping list"/>
                         </ListItem>
 
                         <ListItem divider={true}>
                             <ListItemAvatar>
                                 <CheckOutlined className={classes.uncompletedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Uncompleted" secondary="View uncompleted agenda"/>
+                            <ListItemText primary="Shops"/>
                         </ListItem>
 
                         <ListItem divider={true}>
                             <ListItemAvatar>
                                 <Timeline className={classes.timelineIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Storyline" secondary="View your life activities"/>
+                            <ListItemText primary="Products"/>
                         </ListItem>
 
                         <ListItem divider={true}>
                             <ListItemAvatar>
                                 <CheckOutlined className={classes.uncompletedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Unaccomplished" secondary="Lifetime uncompleted agenda"/>
+                            <ListItemText primary="Orders"/>
                         </ListItem>
 
                         <ListItem divider={true}>
                             <ListItemAvatar>
                                 <CheckCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
-                            <ListItemText primary="Accomplished" secondary="Lifetime completed agenda"/>
+                            <ListItemText primary="Cart"/>
+                        </ListItem>
+
+                        <ListItem divider={true}>
+                            <ListItemAvatar>
+                                <CheckCircle className={classes.completedIcon}/>
+                            </ListItemAvatar>
+                            <ListItemText primary="Account"/>
                         </ListItem>
                     </List>
                 </Grid>

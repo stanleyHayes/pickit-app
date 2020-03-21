@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import {makeStyles} from "@material-ui/styles";
 import {Container, Grid, Typography} from "@material-ui/core";
 import ProductItem from "../../components/shared/ProductItem";
+import OrderItem from "../../components/shared/OrderItem";
 
 function OrdersPage(props) {
     const useStyles = makeStyles({
@@ -44,10 +45,10 @@ function OrdersPage(props) {
                             </Grid>
 
                         ) : (
-                            (orders.map(function (list, index) {
+                            (orders.map(function (order, index) {
                                 return (
                                     <Grid key={index} item={true} xs={12} sm={12} md={6}>
-                                        <ProductItem list={list}/>
+                                        <OrderItem list={order}/>
                                     </Grid>
                                 )
                             }))

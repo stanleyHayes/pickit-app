@@ -2,36 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navigation/NavigationBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/CreateTodoForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/OrderItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/ProductItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/ShopItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/ShoppingListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/TodoList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/TodoListItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/authentication/VerifyAccountPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/ShoppingCartPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/home/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/orders/OrderPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/orders/OrdersPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/ProductPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/products/ProductsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shopping-list/ShoppingListPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shops/ShopsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/shared/ProductOrderItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/products/CreateProductPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shopping-list/CreateShoppingListPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shops/CreateShopPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/OrderItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/OrderItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cart/ShoppingCartPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cart/ShoppingCartPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/orders/OrdersPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/orders/OrdersPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/products/ProductsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/ProductsPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584787902394</updated>
-      <workItem from="1584787904145" duration="9616000" />
+      <workItem from="1584787904145" duration="12828000" />
     </task>
     <servers />
   </component>
@@ -109,6 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="749" y="299" key="FileChooserDialogImpl" timestamp="1584805278817">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="749" y="299" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584805278817" />
     <state width="1824" height="274" key="GridCell.Tab.0.bottom" timestamp="1584792409515">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
