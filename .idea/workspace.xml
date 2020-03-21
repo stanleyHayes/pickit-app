@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/EditProfilePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profile/ProfilePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/products/CreateProductPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/products/CreateProductPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shops/CreateShopPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shops/CreateShopPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/shared/ShoppingListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/ShoppingListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shopping-list/CreateShoppingListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-list/CreateShoppingListPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584787902394</updated>
-      <workItem from="1584787904145" duration="19915000" />
+      <workItem from="1584787904145" duration="23523000" />
     </task>
     <servers />
   </component>

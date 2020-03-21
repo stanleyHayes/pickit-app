@@ -3,7 +3,6 @@ import {
 
     CardHeader,
     CardActions,
-    Avatar,
     Button,
     CardContent,
     Card,
@@ -15,20 +14,25 @@ import {Edit, Delete, DoneAll, Done, CheckCircle} from "@material-ui/icons";
 
 import {makeStyles} from "@material-ui/styles";
 
-function ShoppingListItem({listItem, dispatch}) {
+function ShoppingListItem({listItem, dispatch, handleListItemRemove}) {
 
-    const {name, image, quantity, status, description} = listItem;
+    const {name,  quantity, status, description} = listItem;
 
     const useStyles = makeStyles({
-
+        deleteIcon: {
+            color: "red"
+        }
     });
 
     const classes = useStyles();
 
+    function handleDeleteClicked() {
+        handleListItemRemove(listItem);
+    }
+
     return (
         <Card elevation={2} raised={true} variant="elevation">
             <CardHeader
-                avatar={<Avatar src={image}/>}
                 title={name}
                 subheader={`${quantity} ${quantity === 1 ? "piece" : "pieces"}`}
             />
@@ -39,8 +43,8 @@ function ShoppingListItem({listItem, dispatch}) {
                 <Button>
                     <Edit/>
                 </Button>
-                <Button>
-                    <Delete/>
+                <Button onClick={handleDeleteClicked}>
+                    <Delete className={classes.red}/>
                 </Button>
                 <Button>
                     {(status === "bought") ? (<DoneAll/>)
