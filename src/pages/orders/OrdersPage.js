@@ -11,11 +11,11 @@ function OrdersPage(props) {
             flex: 1,
             backgroundColor: "whitesmoke",
             display: "flex",
-            minHeight: "95vh"
+            minHeight: "95vh",
+            paddingTop: 30
         },
         container: {
             flex: 1,
-            minHeight: "100%"
         },
         noShopsContainer: {
             flex: 1,
@@ -23,7 +23,13 @@ function OrdersPage(props) {
         }
     });
 
-    const [orders, setOrders] = useState([]);
+    const order = {
+        date: "2020-9-24",
+        items: [],
+        id: "10203"
+    };
+
+    const [orders, setOrders] = useState([order, order, order, order, order, order, order, order, order, order, order, order, order, order, order]);
     const classes = useStyles();
 
     return (
@@ -32,7 +38,7 @@ function OrdersPage(props) {
                 <Container>
                     <Grid
                         className={classes.container}
-                        direction="column"
+                        direction="row"
                         spacing={2}
                         container={true}
                         justify={(orders.length === 0) ? "center" : "flex-start"}
@@ -47,8 +53,8 @@ function OrdersPage(props) {
                         ) : (
                             (orders.map(function (order, index) {
                                 return (
-                                    <Grid key={index} item={true} xs={12} sm={12} md={6}>
-                                        <OrderItem list={order}/>
+                                    <Grid key={index} item={true} xs={12} sm={12} md={3}>
+                                        <OrderItem order={order}/>
                                     </Grid>
                                 )
                             }))

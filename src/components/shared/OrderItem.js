@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardHeader, CardActions, Button} from "@material-ui/core";
+import {Card, CardHeader, CardContent, Typography} from "@material-ui/core";
 import {Info} from "@material-ui/icons";
 
 function OrderItem(props) {
@@ -7,13 +7,12 @@ function OrderItem(props) {
         <Card>
             <CardHeader
                 title={props.order.id}
-                subheader={`${props.order.items.length} items`}
+                action={<Info/>}
+                subheader={new Date(props.order.date).toDateString()}
             />
-            <CardActions>
-                <Button>
-                    <Info/>
-                </Button>
-            </CardActions>
+            <CardContent>
+                <Typography variant="body1">{`${props.order.items.length} items contained in order`}</Typography>
+            </CardContent>
         </Card>
     )
 }
