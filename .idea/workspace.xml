@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/shared/InstructionItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/covid-19-save-the-earth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pickit-app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/account/AccountPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/AccountPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +79,7 @@
       <updated>1584787902394</updated>
       <workItem from="1584787904145" duration="34455000" />
       <workItem from="1584861605560" duration="3340000" />
+      <workItem from="1584866103176" duration="701000" />
     </task>
     <servers />
   </component>

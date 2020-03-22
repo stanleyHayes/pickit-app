@@ -3,6 +3,8 @@ import Layout from "../../components/layout/Layout";
 import {Container, Grid, Typography, List} from "@material-ui/core";
 import InstructionItem from "../../components/shared/InstructionItem";
 import {makeStyles} from "@material-ui/styles";
+import OrderItem from "../../components/shared/OrderItem";
+import ShoppingListItem from "../../components/shared/ShoppingListItem";
 
 function HomePage(props) {
 
@@ -43,11 +45,15 @@ function HomePage(props) {
 
     const classes = useStyles();
 
+    const [onRouteOrders, setOnRouteOrders] = useState([]);
+    const [deliveredOrders, setDeliveredOrders] = useState([]);
+    const [shoppingList, setShoppingList] = useState([]);
+
     return (
         <Layout>
             <div className={classes.root}>
                 <Container>
-                    <Grid container={true} spacing={3} justify="center" alignItems="flex-start">
+                    <Grid container={true} spacing={3} direction="column" justify="center" alignItems="flex-start">
                         <Grid item={true}>
                             <List title="Things to do">
                                 {instructions.map(function (instruction, index) {
@@ -57,15 +63,70 @@ function HomePage(props) {
                                 })}
                             </List>
                         </Grid>
-                        <Grid item={true}>
-                            <Typography variant="h2">Orders with status on route</Typography>
-                        </Grid>
-                        <Grid item={true}>
-                            <Typography variant="h2">Orders with status delivered</Typography>
+                        <Grid item={true} container={true}>
+                            <Grid>
+                                <Typography variant="h4">Orders on its way</Typography>
+                            </Grid>
+
+                            {(onRouteOrders.length === 0) ? (
+                                <Grid className={classes.noShopsContainer} direction="column" alignItems="center"
+                                      justify="center" container={true} item={true}>
+                                    <Typography align="center" variant="h6">No orders on its way</Typography>
+                                </Grid>
+
+                            ) : (
+                                (onRouteOrders.map(function (order, index) {
+                                    return (
+                                        <Grid key={index} item={true} xs={12} sm={12} md={3}>
+                                            <OrderItem order={order}/>
+                                        </Grid>
+                                    )
+                                }))
+                            )}
                         </Grid>
 
                         <Grid item={true}>
-                            <Typography variant="h2">Latest list. if not make list button</Typography>
+                            <Grid>
+                                <Typography variant="h4">Delivered</Typography>
+                            </Grid>
+
+                            {(deliveredOrders.length === 0) ? (
+                                <Grid className={classes.noShopsContainer} direction="column" alignItems="center"
+                                      justify="center" container={true} item={true}>
+                                    <Typography align="center" variant="h6">No orders delivered</Typography>
+                                </Grid>
+
+                            ) : (
+                                (deliveredOrders.map(function (order, index) {
+                                    return (
+                                        <Grid key={index} item={true} xs={12} sm={12} md={3}>
+                                            <OrderItem order={order}/>
+                                        </Grid>
+                                    )
+                                }))
+                            )}
+                        </Grid>
+
+                        <Grid item={true} container={true}>
+                            <Grid>
+                                <Typography variant="h4">Delivered</Typography>
+                            </Grid>
+
+                            {(shoppingList.length === 0) ? (
+                                <Grid className={classes.noShopsContainer} direction="column" alignItems="center"
+                                      justify="center" container={true} item={true}>
+                                    <Typography align="center" variant="h6">No Shopping list made</Typography>
+                                </Grid>
+
+                            ) : (
+                                (shoppingList.map(function (listItem, index) {
+                                    return (
+                                        <Grid key={index} item={true} xs={12} sm={12} md={3}>
+                                            <ShoppingListItem listItem={listItem}/>
+                                        </Grid>
+                                    )
+                                }))
+                            )}
                         </Grid>
                     </Grid>
                 </Container>
