@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/shared/InstructionItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covid-19-save-the-earth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pickit-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/account/AccountPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/AccountPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/HomePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +39,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/authentication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -69,6 +67,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,32 +83,46 @@
       <option name="presentableId" value="Default" />
       <updated>1584787902394</updated>
       <workItem from="1584787904145" duration="34455000" />
+      <workItem from="1584861605560" duration="3340000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="749" y="299" key="FileChooserDialogImpl" timestamp="1584805278817">
+    <state x="452" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584865841537">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="749" y="299" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584805278817" />
-    <state width="1824" height="274" key="GridCell.Tab.0.bottom" timestamp="1584792409515">
+    <state x="452" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584865841537" />
+    <state x="749" y="299" key="FileChooserDialogImpl" timestamp="1584865600040">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1824" height="274" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409515" />
-    <state width="1824" height="274" key="GridCell.Tab.0.center" timestamp="1584792409514">
+    <state x="749" y="299" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584865600040" />
+    <state width="1824" height="274" key="GridCell.Tab.0.bottom" timestamp="1584865886574">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1824" height="274" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409514" />
-    <state width="1824" height="274" key="GridCell.Tab.0.left" timestamp="1584792409513">
+    <state width="1824" height="274" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584865886574" />
+    <state width="1824" height="274" key="GridCell.Tab.0.center" timestamp="1584865886573">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1824" height="274" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409513" />
-    <state width="1824" height="274" key="GridCell.Tab.0.right" timestamp="1584792409514">
+    <state width="1824" height="274" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584865886573" />
+    <state width="1824" height="274" key="GridCell.Tab.0.left" timestamp="1584865886573">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1824" height="274" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584792409514" />
+    <state width="1824" height="274" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584865886573" />
+    <state width="1824" height="274" key="GridCell.Tab.0.right" timestamp="1584865886574">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1824" height="274" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584865886574" />
+    <state x="513" y="188" width="964" height="737" key="SettingsEditor" timestamp="1584865604572">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="513" y="188" width="964" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1584865604572" />
   </component>
 </project>

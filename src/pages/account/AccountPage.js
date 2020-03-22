@@ -75,8 +75,8 @@ function AccountPage() {
             <Container>
                 <Grid
                     container={true}
-                    direction="column"
-                    alignItems="stretch"
+                    direction="row"
+                    alignItems="center"
                     justify="center"
                     spacing={4}
                     className={classes.container}>
