@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import Layout from "../../components/layout/Layout";
 import {Avatar, Button, Card, CardContent, Container, Grid, IconButton, TextField, Typography} from "@material-ui/core";
 import {Visibility, VisibilityOff} from "@material-ui/icons";
-import {Link} from "react-router-dom";
 import {makeStyles} from "@material-ui/styles";
 
 function ChangePassword(props) {
@@ -11,7 +10,8 @@ function ChangePassword(props) {
         container: {
             display: "flex",
             flexDirection: "column",
-            minHeight: "100vh",
+            minHeight: "80vh",
+            paddingTop: 80,
             backgroundColor: "#eeeeee",
             justifyContent: "center",
             alignItems: "center"
@@ -93,7 +93,7 @@ function ChangePassword(props) {
                                     <TextField
                                         label="Password"
                                         placeholder="Enter password"
-                                        fullWidth={false}
+                                        fullWidth={true}
                                         required={true}
                                         onChange={handlePasswordsChange}
                                         margin="dense"
@@ -109,7 +109,7 @@ function ChangePassword(props) {
                                     <TextField
                                         label="New Password"
                                         placeholder="Enter password"
-                                        fullWidth={false}
+                                        fullWidth={true}
                                         required={true}
                                         onChange={handlePasswordsChange}
                                         margin="dense"
@@ -126,7 +126,7 @@ function ChangePassword(props) {
                                         <TextField
                                             label="Confirm New Password"
                                             placeholder="Enter password confirmation"
-                                            fullWidth={false}
+                                            fullWidth={true}
                                             required={true}
                                             onChange={handlePasswordsChange}
                                             margin="dense"
@@ -151,8 +151,7 @@ function ChangePassword(props) {
                                         fullWidth={true}
                                         disabled={loading}
                                         onSubmit={handlePasswordChangeSubmit}
-                                        onClick={handlePasswordChangeSubmit}>Sign In</Button>
-
+                                        onClick={handlePasswordChangeSubmit}>Change Password</Button>
                                 </CardContent>
                             </Card>
                         </Grid>

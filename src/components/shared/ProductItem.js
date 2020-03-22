@@ -1,6 +1,6 @@
 import React from "react";
 import {Card, CardHeader, CardMedia, CardContent, Typography, CardActions, Button, Avatar} from "@material-ui/core";
-import {ShoppingBasket, Info} from "@material-ui/icons";
+import {AddShoppingCart, Info} from "@material-ui/icons";
 import {makeStyles} from "@material-ui/styles";
 
 function ProductItem(props) {
@@ -52,7 +52,7 @@ function ProductItem(props) {
             </CardContent>
             <CardActions>
                 <Button>
-                    <ShoppingBasket/>
+                    <AddShoppingCart/>
                 </Button>
 
                 <Button>

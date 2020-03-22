@@ -11,7 +11,7 @@ function CreateShoppingListPage(props) {
     const [error, setError] = useState({});
 
     function handleListItemChange(event) {
-        setListItem({...listItem, [event.target.name]: event.target.value});
+        setListItem({...listItem, [event.target.name]: event.target.value, date: new Date()});
     }
 
     function handleListItemAdd() {
@@ -28,13 +28,19 @@ function CreateShoppingListPage(props) {
     }
 
     const useStyles = makeStyles({
-        noListItemContainer: {
-            backgroundColor: "whitesmoke"
-        },
-        root: {
-            marginTop: 80
-        }
-    });
+            noListItemContainer: {
+                backgroundColor: "whitesmoke"
+            },
+            root: {
+                marginTop: 80
+            },
+            button: {
+                backgroundColor: "purple",
+                color: "white",
+                marginTop: 4
+            }
+        })
+    ;
 
     const classes = useStyles();
 
@@ -121,16 +127,23 @@ function CreateShoppingListPage(props) {
                         {(shoppingList.length === 0) ? (
                             <Typography variant="subtitle2" align="center">No items in your list</Typography>
                         ) : (
-                            (shoppingList.map(function (listItem, index) {
-                                return (
-                                    <Grid xs={12} item={true} key={index}>
-                                        <ShoppingListItem
-                                            handleListItemRemove={handleListItemRemove}
-                                            listItem={listItem}
-                                        />
-                                    </Grid>
-                                )
-                            }))
+                            <Grid spacing={2} container={true}>
+                                {
+                                    (shoppingList.map(function (listItem, index) {
+                                        return (
+                                            <Grid xs={12} md={6} item={true} key={index}>
+                                                <ShoppingListItem
+                                                    handleListItemRemove={handleListItemRemove}
+                                                    listItem={listItem}
+                                                />
+                                            </Grid>
+                                        )
+                                    }))
+                                }
+                                <Button className={classes.button} fullWidth={true} variant="contained">Submit Shopping
+                                    list</Button>
+                            </Grid>
+
                         )}
                     </Grid>
                 </Grid>

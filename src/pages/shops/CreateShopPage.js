@@ -76,7 +76,7 @@ function CreateShopPage(props) {
 
                                     <Typography variant="overline">Address</Typography>
                                     <TextField
-                                        value={shop.description}
+                                        value={shop.address}
                                         onChange={handleShopChange}
                                         variant="outlined"
                                         type="text"

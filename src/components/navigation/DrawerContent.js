@@ -1,62 +1,68 @@
-import React, {useState} from "react";
+import React from "react";
 import {Container, Grid, Avatar, ListItemAvatar, ListItem, ListItemText, List} from "@material-ui/core";
 import {
     Face,
-    CheckCircle,
     CheckOutlined,
-    FormatListNumbered,
-    Timeline,
+    ShoppingCart,
+    Apps,
     DeleteForever,
     ExitToApp,
     Edit,
-    LockOpen
+    LockOpen,
+    AccountCircle,
+    Shop,
+    FormatListBulleted,
+
+    MonetizationOn
 } from "@material-ui/icons";
 import {makeStyles} from "@material-ui/core/styles";
-import {Link, useHistory} from "react-router-dom";
-
-const useStyles = makeStyles({
-    avatar: {
-        width: "200px",
-        height: "200px"
-    },
-    container: {
-        marginTop: "16px"
-    },
-    profileIcon: {
-        color: "blue"
-    },
-    agendaIcon: {
-        color: "purple"
-    },
-    completedIcon: {
-        color: "green"
-    },
-    uncompletedIcon: {
-        color: "orangered"
-    },
-    timelineIcon: {
-        color: "brown"
-    },
-    logoutIcon: {
-        color: "pink"
-    },
-    changePasswordIcon: {
-        color: "orange"
-    },
-    deleteIcon: {
-        color: "red"
-    },
-    editProfileIcon: {
-        color: "grey"
-    },
-    link: {
-        textDecoration: "none"
-    }
-
-});
+import {Link} from "react-router-dom";
 
 
 function DrawerContent() {
+
+
+    const useStyles = makeStyles({
+        avatar: {
+            width: "200px",
+            height: "200px"
+        },
+        container: {
+            marginTop: "16px"
+        },
+        profileIcon: {
+            color: "blue"
+        },
+        agendaIcon: {
+            color: "purple"
+        },
+        completedIcon: {
+            color: "green"
+        },
+        uncompletedIcon: {
+            color: "orangered"
+        },
+        timelineIcon: {
+            color: "brown"
+        },
+        logoutIcon: {
+            color: "pink"
+        },
+        changePasswordIcon: {
+            color: "orange"
+        },
+        deleteIcon: {
+            color: "red"
+        },
+        editProfileIcon: {
+            color: "grey"
+        },
+        link: {
+            textDecoration: "none"
+        }
+
+    });
+
 
     const classes = useStyles();
 
@@ -96,7 +102,7 @@ function DrawerContent() {
 
                         <ListItem divider={true} button={true} id="home">
                             <ListItemAvatar>
-                                <FormatListNumbered className={classes.agendaIcon}/>
+                                <Apps className={classes.agendaIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/">
                                 <ListItemText primary="Home"/>
@@ -106,7 +112,7 @@ function DrawerContent() {
                         <ListItem
                             divider={true} button={true} id="list">
                             <ListItemAvatar>
-                                <CheckCircle className={classes.completedIcon}/>
+                                <FormatListBulleted className={classes.completedIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/list">
                                 <ListItemText primary="Shopping list"/>
@@ -117,7 +123,7 @@ function DrawerContent() {
                             divider={true} button={true}
                             id="shops">
                             <ListItemAvatar>
-                                <CheckOutlined className={classes.uncompletedIcon}/>
+                                <Shop className={classes.uncompletedIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/shops">
                                 <ListItemText primary="Shops"/>
@@ -128,7 +134,7 @@ function DrawerContent() {
                             divider={true} button={true}
                             id="products">
                             <ListItemAvatar>
-                                <Timeline className={classes.timelineIcon}/>
+                                <MonetizationOn className={classes.timelineIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/products">
                                 <ListItemText primary="Products"/>
@@ -149,7 +155,7 @@ function DrawerContent() {
                         <ListItem
                             divider={true} button={true} id="cart">
                             <ListItemAvatar>
-                                <CheckCircle className={classes.completedIcon}/>
+                                <ShoppingCart className={classes.completedIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/cart">
                                 <ListItemText primary="Cart"/>
@@ -160,7 +166,7 @@ function DrawerContent() {
                             divider={true} button={true}
                             id="account">
                             <ListItemAvatar>
-                                <CheckCircle className={classes.completedIcon}/>
+                                <AccountCircle className={classes.completedIcon}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/account">
                                 <ListItemText primary="Account"/>

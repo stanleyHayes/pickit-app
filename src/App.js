@@ -19,6 +19,7 @@ import CreateProductPage from "./pages/products/CreateProductPage";
 import CreateShoppingListPage from "./pages/shopping-list/CreateShoppingListPage";
 import EditProfilePage from "./pages/profile/EditProfilePage";
 import ProfilePage from "./pages/profile/ProfilePage";
+import AccountPage from "./pages/account/AccountPage";
 
 function App() {
     return (
@@ -98,6 +99,11 @@ function App() {
 
                 <Route path="/edit-profile">
                     <EditProfilePage/>
+                </Route>
+
+
+                <Route path="/account">
+                    <AccountPage/>
                 </Route>
             </Switch>
         </BrowserRouter>

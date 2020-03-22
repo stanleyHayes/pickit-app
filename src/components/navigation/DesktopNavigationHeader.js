@@ -35,7 +35,7 @@ function DesktopNavigationHeader(props) {
     const classes = useStyles();
 
     return (
-        <Toolbar title="Todo" variant="regular">
+        <Toolbar title="Heal the world" variant="regular">
             <div className={classes.container}>
                 <div className={classes.brandContainer}>
                     <Typography className={classes.title} variant="h5">CoVid-19</Typography>
