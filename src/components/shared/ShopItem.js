@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardHeader, CardMedia, CardContent, Typography, Button, Avatar, CardActions} from "@material-ui/core";
+import {Card, CardHeader, CardMedia, CardContent, Typography, Button, Avatar} from "@material-ui/core";
 import {Phone, Email, Info} from "@material-ui/icons";
 import {makeStyles} from "@material-ui/styles";
 
