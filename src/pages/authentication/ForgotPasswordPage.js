@@ -63,7 +63,7 @@ function ForgotPasswordPage(props) {
                                             className={classes.logo}
                                             src="/static/images/logo512.png"/>
                                     </div>
-                                    <Typography align="center" variant="h4">MCoVid-19</Typography>
+                                    <Typography align="center" variant="h4">PickItApp</Typography>
                                     <Typography align="center" variant="h5">Forgot Password</Typography>
                                 </div>
                                 <Typography gutterBottom={true} variant="overline">Email</Typography>

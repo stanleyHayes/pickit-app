@@ -38,7 +38,7 @@ function DesktopNavigationHeader(props) {
         <Toolbar title="Heal the world" variant="regular">
             <div className={classes.container}>
                 <div className={classes.brandContainer}>
-                    <Typography className={classes.title} variant="h5">CoVid-19</Typography>
+                    <Typography className={classes.title} variant="h5">PickItApp</Typography>
                 </div>
                 <div>
                     <Grid item={true} container={true} direction="row" justify="center">

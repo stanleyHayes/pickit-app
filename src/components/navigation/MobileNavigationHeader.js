@@ -44,7 +44,7 @@ function MobileNavigationHeader() {
                     </Button>
                 </div>
                 <div className={classes.header}>
-                    <Typography className={classes.title} variant="h5">CoVid-19</Typography>
+                    <Typography className={classes.title} variant="h5">PickItApp</Typography>
                 </div>
                 <div>
                     <Avatar/>

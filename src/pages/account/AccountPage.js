@@ -76,16 +76,12 @@ function AccountPage() {
                 <Grid
                     container={true}
                     direction="column"
-                    alignItems="center"
-                    justify="flex-start"
+                    alignItems="stretch"
+                    justify="center"
                     spacing={4}
                     className={classes.container}>
 
-                    <Grid item={true}>
-                        <Avatar className={classes.avatar}/>
-                    </Grid>
-
-                    <Grid item={true}>
+                    <Grid item={true} xs={12} md={8} lg={8} >
                         <List>
                             <ListItem divider={true} button={true} id="profile">
                                 <ListItemAvatar>
@@ -99,7 +95,7 @@ function AccountPage() {
                         </List>
                     </Grid>
 
-                    <Grid>
+                    <Grid item={true} xs={12} md={8} lg={8}>
                         <List dense={false} draggable={true}>
                             <ListItem onClick={handleLogoutClicked}
                                       divider={true} button={true}

@@ -11,7 +11,7 @@ function ChangePassword(props) {
             display: "flex",
             flexDirection: "column",
             minHeight: "80vh",
-            paddingTop: 80,
+            paddingTop: 30,
             backgroundColor: "#eeeeee",
             justifyContent: "center",
             alignItems: "center"
@@ -85,7 +85,7 @@ function ChangePassword(props) {
                                                 className={classes.logo}
                                                 src="/static/images/logo512.png"/>
                                         </div>
-                                        <Typography align="center" variant="h4">CoVid-19</Typography>
+                                        <Typography align="center" variant="h4">PickItApp</Typography>
                                         <Typography align="center" variant="h5">Change Password</Typography>
                                     </div>
 

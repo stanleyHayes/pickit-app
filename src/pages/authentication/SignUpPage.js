@@ -14,8 +14,6 @@ import {
 import {makeStyles} from "@material-ui/styles";
 import {Link} from "react-router-dom";
 
-// import DateFnsUtils from "@date-io/date-fns";
-
 function SignUpPage(props) {
 
     const useStyles = makeStyles({
@@ -29,6 +27,8 @@ function SignUpPage(props) {
         },
         signInButton: {
             backgroundColor: "purple",
+            marginTop: 4,
+            marginBottom: 4,
             color: "white"
         },
         logo: {
@@ -45,7 +45,7 @@ function SignUpPage(props) {
             marginBottom: "4px"
         },
         button: {
-            marginTop: "4px",
+            marginTop: "8px",
             marginBottom: "4px"
         }
     });
@@ -53,20 +53,12 @@ function SignUpPage(props) {
     const classes = useStyles();
 
     const [user, setUser] = useState({});
-    const [openRole, setOpenRole] = useState({});
     const [loading, setLoading] = useState(false);
 
     function handleUserChange(event) {
 
     }
 
-    function handleRoleClose() {
-
-    }
-
-    function handleRoleOpen() {
-
-    }
 
     function handleUserLogin(event) {
         event.preventDefault();
@@ -85,7 +77,7 @@ function SignUpPage(props) {
                                         className={classes.logo}
                                         src="/static/images/logo512.png"/>
                                 </div>
-                                <Typography align="center" variant="h2">CoVid-19</Typography>
+                                <Typography align="center" variant="h3">PickItApp</Typography>
                                 <Typography align="center" variant="h5">Sign Up</Typography>
                             </div>
                             <CardContent>
@@ -125,17 +117,17 @@ function SignUpPage(props) {
                                     <Typography gutterBottom={true} variant="overline">Phone</Typography>
                                     <TextField
                                         className={classes.textField}
-                                        label="Username"
-                                        placeholder="Enter username"
+                                        label="Phone"
+                                        placeholder="Enter phone"
                                         fullWidth={true}
                                         required={true}
                                         onChange={handleUserChange}
                                         margin="dense"
                                         type="text"
                                         variant="outlined"
-                                        value={user.username}
-                                        name="username"
-                                        id="username"
+                                        value={user.phone}
+                                        name="phone"
+                                        id="phone"
                                     />
 
                                     <Typography gutterBottom={true} variant="overline">Address</Typography>
@@ -155,25 +147,19 @@ function SignUpPage(props) {
                                     />
 
 
-                                    <Typography gutterBottom={true} variant="overline">Role</Typography>
-                                    <Select
-                                        labelId="demo-controlled-open-select-label"
-                                        id="demo-controlled-open-select"
-                                        open={openRole}
-                                        onClose={handleRoleClose}
-                                        onOpen={handleRoleOpen}
-                                        name="role"
-                                        value={user.role}
-                                        onChange={handleUserChange}
-                                    >
-                                        <MenuItem value="">
-                                            <em>None</em>
-                                        </MenuItem>
-                                        <MenuItem value={10}>Ten</MenuItem>
-                                        <MenuItem value={20}>Twenty</MenuItem>
-                                        <MenuItem value={30}>Thirty</MenuItem>
-                                    </Select>
-
+                                    <Typography variant="overline" gutterBottom={true}>Role</Typography>
+                                    <div>
+                                        <Select
+                                            defaultValue="User"
+                                            name="role"
+                                            onChange={handleUserChange}
+                                            value={user.role}
+                                            variant="outlined"
+                                            autoWidth={false}>
+                                            <MenuItem value="User" divider={true} title="User">User</MenuItem>
+                                            <MenuItem value="Vendor" divider={true} title="Vendor">Vendor</MenuItem>
+                                        </Select>
+                                    </div>
 
                                     <Button
                                         variant="contained"
@@ -187,10 +173,7 @@ function SignUpPage(props) {
                                     <Button
                                         className={classes.button}
                                         variant="text"
-                                        fullWidth={true}
-                                        disabled={loading}
-                                        onSubmit={handleUserLogin}
-                                        onClick={handleUserLogin}>
+                                        fullWidth={true}>
                                         <Link to="/login">
                                             Already have an account? Login
                                         </Link>

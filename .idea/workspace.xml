@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2236ba83-9f69-42ff-b944-cf35011c28df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/account/AccountPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/DesktopNavigationHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/DrawerContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/shared/ProductItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/shared/ProductItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/MobileNavigationHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/account/AccountPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/account/AccountPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ChangePasswordPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/profile/EditProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/EditProfilePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shopping-list/CreateShoppingListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shopping-list/CreateShoppingListPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shops/CreateShopPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shops/CreateShopPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ForgotPasswordPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/ResetPasswordPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/SignInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/authentication/SignUpPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584787902394</updated>
-      <workItem from="1584787904145" duration="32729000" />
+      <workItem from="1584787904145" duration="34455000" />
     </task>
     <servers />
   </component>
